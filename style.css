@@ -1,0 +1,119 @@
+:root {
+  --primary-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-darker-cyan:  hsl(179, 100%, 13%);
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --gray-color: hsl(0, 0%, 95%);
+  --font-size: 15px;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Big Shoulders';
+  src: url(/Big_Shoulders/BigShoulders-VariableFont_opsz\,wght.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: var(--gray-color);
+  margin: 0;
+  padding: 0;
+}
+
+.side-padding {
+  padding: 0 35px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.card {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.l-heading {
+  color: var(--gray-color);
+  font-size: 30px;
+  font-family: 'Big Shoulders';
+  font-weight: 600;
+}
+
+p {
+  color: var(--paragraph-color);
+  font-family: 'Lexend Deca';
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 2;
+  word-spacing: 2px;
+}
+
+.sedan {
+  background: var(--primary-orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+  background: var(--primary-dark-cyan);
+}
+
+.luxury {
+  background: var(--primary-darker-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+img {
+  width: 55px;
+  opacity: 0.8;
+  margin-top: 4rem;
+}
+
+.button {
+  border: 1px solid var(--gray-color);
+  display: inline-block;
+  background: var(--gray-color);
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-family: 'Lexend Deca';
+  font-size: var(--font-size);
+  font-weight: 400;
+  margin-bottom: 3rem;  
+}
+
+.button:hover {
+  background-color: inherit;
+  color: var(--gray-color);
+}
+
+@media screen and (min-width: 1044px) {
+  .flex {
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .card {
+    max-width: 300px;
+    margin: 0;
+  }
+  .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+  .button {
+    margin-top: 40px;
+  }
+}
